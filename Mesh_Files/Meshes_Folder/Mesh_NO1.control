@@ -1,0 +1,131 @@
+\begin{MODEL}
+   \begin{OUTER_BOUNDARY}
+      \begin{END_POINTS_LINE}
+         name = line1
+         xEnd = [6.0,0.0,0.0]
+         xStart = [0.0,0.0,0.0]
+      \end{END_POINTS_LINE}
+      \begin{END_POINTS_LINE}
+         name = line2
+         xEnd = [6.0,2.0,0.0]
+         xStart = [6.0,0.0,0.0]
+      \end{END_POINTS_LINE}
+      \begin{END_POINTS_LINE}
+         name = line3
+         xEnd = [4.0,2.0,0.0]
+         xStart = [6.0,2.0,0.0]
+      \end{END_POINTS_LINE}
+      \begin{END_POINTS_LINE}
+         name = line4
+         xEnd = [4.0,4.0,0.0]
+         xStart = [4.0,2.0,0.0]
+      \end{END_POINTS_LINE}
+      \begin{END_POINTS_LINE}
+         name = line5
+         xEnd = [6.0,4.0,0.0]
+         xStart = [4.0,4.0,0.0]
+      \end{END_POINTS_LINE}
+      \begin{END_POINTS_LINE}
+         name = line6
+         xEnd = [6.0,6.0,0.0]
+         xStart = [6.0,4.0,0.0]
+      \end{END_POINTS_LINE}
+      \begin{END_POINTS_LINE}
+         name = line7
+         xEnd = [4.0,6.0,0.0]
+         xStart = [6.0,6.0,0.0]
+      \end{END_POINTS_LINE}
+      \begin{END_POINTS_LINE}
+         name = line8
+         xEnd = [4.0,8.0,0.0]
+         xStart = [4.0,6.0,0.0]
+      \end{END_POINTS_LINE}
+      \begin{END_POINTS_LINE}
+         name = line9
+         xEnd = [6.0,8.0,0.0]
+         xStart = [4.0,8.0,0.0]
+      \end{END_POINTS_LINE}
+      \begin{END_POINTS_LINE}
+         name = line10
+         xEnd = [6.0,10.0,0.0]
+         xStart = [6.0,8.0,0.0]
+      \end{END_POINTS_LINE}
+      \begin{END_POINTS_LINE}
+         name = line11
+         xEnd = [0.0,10.0,0.0]
+         xStart = [6.0,10.0,0.0]
+      \end{END_POINTS_LINE}
+      \begin{END_POINTS_LINE}
+         name = line12
+         xEnd = [0.0,8.0,0.0]
+         xStart = [0.0,10.0,0.0]
+      \end{END_POINTS_LINE}
+      \begin{END_POINTS_LINE}
+         name = line13
+         xEnd = [2.0,8.0,0.0]
+         xStart = [0.0,8.0,0.0]
+      \end{END_POINTS_LINE}
+      \begin{END_POINTS_LINE}
+         name = line14
+         xEnd = [2.0,6.0,0.0]
+         xStart = [2.0,8.0,0.0]
+      \end{END_POINTS_LINE}
+      \begin{END_POINTS_LINE}
+         name = line15
+         xEnd = [0.0,6.0,0.0]
+         xStart = [2.0,6.0,0.0]
+      \end{END_POINTS_LINE}
+      \begin{END_POINTS_LINE}
+         name = line16
+         xEnd = [0.0,4.0,0.0]
+         xStart = [0.0,6.0,0.0]
+      \end{END_POINTS_LINE}
+      \begin{END_POINTS_LINE}
+         name = line17
+         xEnd = [2.0,4.0,0.0]
+         xStart = [0.0,4.0,0.0]
+      \end{END_POINTS_LINE}
+      \begin{END_POINTS_LINE}
+         name = line18
+         xEnd = [2.0,2.0,0.0]
+         xStart = [2.0,4.0,0.0]
+      \end{END_POINTS_LINE}
+      \begin{END_POINTS_LINE}
+         name = line19
+         xEnd = [0.0,2.0,0.0]
+         xStart = [2.0,2.0,0.0]
+      \end{END_POINTS_LINE}
+      \begin{END_POINTS_LINE}
+         name = line20
+         xEnd = [0.0,0.0,0.0]
+         xStart = [0.0,2.0,0.0]
+      \end{END_POINTS_LINE}
+   \end{OUTER_BOUNDARY}
+\end{MODEL}
+\begin{CONTROL_INPUT}
+   \begin{REFINEMENT_REGIONS}
+      \begin{REFINEMENT_CENTER}
+         name = region
+         w = 1.0
+         x0 = [3.0,5.0,0.0]
+         type = smooth
+         h = 0.4
+      \end{REFINEMENT_CENTER}
+   \end{REFINEMENT_REGIONS}
+   \begin{SPRING_SMOOTHER}
+      smoothing type = LinearAndCrossbarSpring
+      smoothing = ON
+   \end{SPRING_SMOOTHER}
+   \begin{BACKGROUND_GRID}
+      background grid size = [0.5,0.5,0.0]
+   \end{BACKGROUND_GRID}
+   \begin{RUN_PARAMETERS}
+      mesh file name = Mesh_Files/Meshes_Folder\Mesh_NO1.inp
+      plot file format = skeleton
+      plot file name = Mesh_Files/Meshes_Folder\Mesh_NO1.tec
+      stats file name = Mesh_Files/Meshes_Folder\Mesh_NO1.txt
+      mesh file format = ABAQUS
+      polynomial order = 3
+   \end{RUN_PARAMETERS}
+\end{CONTROL_INPUT}
+\end{FILE}

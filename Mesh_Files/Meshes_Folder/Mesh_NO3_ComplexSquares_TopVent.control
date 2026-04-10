@@ -1,0 +1,223 @@
+\begin{MODEL}
+   \begin{OUTER_BOUNDARY}
+      \begin{END_POINTS_LINE}
+         name = outer1
+         xEnd = [6.0,0.0,0.0]
+         xStart = [0.0,0.0,0.0]
+      \end{END_POINTS_LINE}
+      \begin{END_POINTS_LINE}
+         name = outer2
+         xEnd = [6.0,3.0,0.0]
+         xStart = [6.0,0.0,0.0]
+      \end{END_POINTS_LINE}
+      \begin{END_POINTS_LINE}
+         name = outer3
+         xEnd = [5.5,3.0,0.0]
+         xStart = [6.0,3.0,0.0]
+      \end{END_POINTS_LINE}
+      \begin{END_POINTS_LINE}
+         name = outer4
+         xEnd = [5.5,4.5,0.0]
+         xStart = [5.5,3.0,0.0]
+      \end{END_POINTS_LINE}
+      \begin{END_POINTS_LINE}
+         name = outer5
+         xEnd = [6.0,4.5,0.0]
+         xStart = [5.5,4.5,0.0]
+      \end{END_POINTS_LINE}
+      \begin{END_POINTS_LINE}
+         name = outer6
+         xEnd = [6.0,9.0,0.0]
+         xStart = [6.0,4.5,0.0]
+      \end{END_POINTS_LINE}
+      \begin{END_POINTS_LINE}
+         name = outer7
+         xEnd = [3.5,9.0,0.0]
+         xStart = [6.0,9.0,0.0]
+      \end{END_POINTS_LINE}
+      \begin{END_POINTS_LINE}
+         name = vent
+         xEnd = [2.5,9.0,0.0]
+         xStart = [3.5,9.0,0.0]
+      \end{END_POINTS_LINE}
+      \begin{END_POINTS_LINE}
+         name = outer9
+         xEnd = [0.0,9.0,0.0]
+         xStart = [2.5,9.0,0.0]
+      \end{END_POINTS_LINE}
+      \begin{END_POINTS_LINE}
+         name = outer10
+         xEnd = [0.0,4.5,0.0]
+         xStart = [0.0,9.0,0.0]
+      \end{END_POINTS_LINE}
+      \begin{END_POINTS_LINE}
+         name = outer11
+         xEnd = [0.5,4.5,0.0]
+         xStart = [0.0,4.5,0.0]
+      \end{END_POINTS_LINE}
+      \begin{END_POINTS_LINE}
+         name = outer12
+         xEnd = [0.5,3.0,0.0]
+         xStart = [0.5,4.5,0.0]
+      \end{END_POINTS_LINE}
+      \begin{END_POINTS_LINE}
+         name = outer13
+         xEnd = [0.0,3.0,0.0]
+         xStart = [0.5,3.0,0.0]
+      \end{END_POINTS_LINE}
+      \begin{END_POINTS_LINE}
+         name = outer14
+         xEnd = [0.0,0.0,0.0]
+         xStart = [0.0,3.0,0.0]
+      \end{END_POINTS_LINE}
+   \end{OUTER_BOUNDARY}
+   \begin{INNER_BOUNDARIES}
+      \begin{CHAIN}
+         name = squareLoop1
+            \begin{END_POINTS_LINE}
+               name = sq1_b
+               xEnd = [0.9,6.4,0.0]
+               xStart = [2.1,6.4,0.0]
+            \end{END_POINTS_LINE}
+            \begin{END_POINTS_LINE}
+               name = sq1_l
+               xEnd = [0.9,7.6,0.0]
+               xStart = [0.9,6.4,0.0]
+            \end{END_POINTS_LINE}
+            \begin{END_POINTS_LINE}
+               name = sq1_t
+               xEnd = [2.1,7.6,0.0]
+               xStart = [0.9,7.6,0.0]
+            \end{END_POINTS_LINE}
+            \begin{END_POINTS_LINE}
+               name = sq1_r
+               xEnd = [2.1,6.4,0.0]
+               xStart = [2.1,7.6,0.0]
+            \end{END_POINTS_LINE}
+      \end{CHAIN}
+      \begin{CHAIN}
+         name = squareLoop2
+            \begin{END_POINTS_LINE}
+               name = sq2_b
+               xEnd = [3.9,6.4,0.0]
+               xStart = [5.1,6.4,0.0]
+            \end{END_POINTS_LINE}
+            \begin{END_POINTS_LINE}
+               name = sq2_l
+               xEnd = [3.9,7.6,0.0]
+               xStart = [3.9,6.4,0.0]
+            \end{END_POINTS_LINE}
+            \begin{END_POINTS_LINE}
+               name = sq2_t
+               xEnd = [5.1,7.6,0.0]
+               xStart = [3.9,7.6,0.0]
+            \end{END_POINTS_LINE}
+            \begin{END_POINTS_LINE}
+               name = sq2_r
+               xEnd = [5.1,6.4,0.0]
+               xStart = [5.1,7.6,0.0]
+            \end{END_POINTS_LINE}
+      \end{CHAIN}
+      \begin{CHAIN}
+         name = squareLoop3
+            \begin{END_POINTS_LINE}
+               name = sq3_b
+               xEnd = [0.9,1.4,0.0]
+               xStart = [2.1,1.4,0.0]
+            \end{END_POINTS_LINE}
+            \begin{END_POINTS_LINE}
+               name = sq3_l
+               xEnd = [0.9,2.6,0.0]
+               xStart = [0.9,1.4,0.0]
+            \end{END_POINTS_LINE}
+            \begin{END_POINTS_LINE}
+               name = sq3_t
+               xEnd = [2.1,2.6,0.0]
+               xStart = [0.9,2.6,0.0]
+            \end{END_POINTS_LINE}
+            \begin{END_POINTS_LINE}
+               name = sq3_r
+               xEnd = [2.1,1.4,0.0]
+               xStart = [2.1,2.6,0.0]
+            \end{END_POINTS_LINE}
+      \end{CHAIN}
+      \begin{CHAIN}
+         name = squareLoop4
+            \begin{END_POINTS_LINE}
+               name = sq4_b
+               xEnd = [3.9,1.4,0.0]
+               xStart = [5.1,1.4,0.0]
+            \end{END_POINTS_LINE}
+            \begin{END_POINTS_LINE}
+               name = sq4_l
+               xEnd = [3.9,2.6,0.0]
+               xStart = [3.9,1.4,0.0]
+            \end{END_POINTS_LINE}
+            \begin{END_POINTS_LINE}
+               name = sq4_t
+               xEnd = [5.1,2.6,0.0]
+               xStart = [3.9,2.6,0.0]
+            \end{END_POINTS_LINE}
+            \begin{END_POINTS_LINE}
+               name = sq4_r
+               xEnd = [5.1,1.4,0.0]
+               xStart = [5.1,2.6,0.0]
+            \end{END_POINTS_LINE}
+      \end{CHAIN}
+   \end{INNER_BOUNDARIES}
+\end{MODEL}
+\begin{CONTROL_INPUT}
+   \begin{REFINEMENT_REGIONS}
+      \begin{REFINEMENT_CENTER}
+         name = ref_sq1
+         w = 0.8
+         x0 = [1.5,7.0,0.0]
+         type = smooth
+         h = 0.3
+      \end{REFINEMENT_CENTER}
+      \begin{REFINEMENT_CENTER}
+         name = ref_sq2
+         w = 0.8
+         x0 = [4.5,7.0,0.0]
+         type = smooth
+         h = 0.3
+      \end{REFINEMENT_CENTER}
+      \begin{REFINEMENT_CENTER}
+         name = ref_sq3
+         w = 0.8
+         x0 = [1.5,2.0,0.0]
+         type = smooth
+         h = 0.3
+      \end{REFINEMENT_CENTER}
+      \begin{REFINEMENT_CENTER}
+         name = ref_sq4
+         w = 0.8
+         x0 = [4.5,2.0,0.0]
+         type = smooth
+         h = 0.3
+      \end{REFINEMENT_CENTER}
+      \begin{REFINEMENT_CENTER}
+         name = ref_vent
+         w = 0.6
+         x0 = [3.0,9.0,0.0]
+         type = smooth
+         h = 0.3
+      \end{REFINEMENT_CENTER}
+   \end{REFINEMENT_REGIONS}
+   \begin{SPRING_SMOOTHER}
+      smoothing type = LinearAndCrossbarSpring
+      smoothing = ON
+   \end{SPRING_SMOOTHER}
+   \begin{BACKGROUND_GRID}
+      background grid size = [0.25,0.25,0.0]
+   \end{BACKGROUND_GRID}
+   \begin{RUN_PARAMETERS}
+      mesh file name = Mesh_Files/Meshes_Folder\Mesh_Complex_FourSquares_TopVent.inp
+      plot file format = skeleton
+      plot file name = Mesh_Files/Meshes_Folder\Mesh_Complex_FourSquares_TopVent.tec
+      stats file name = Mesh_Files/Meshes_Folder\Mesh_Complex_FourSquares_TopVent.txt
+      mesh file format = ABAQUS
+      polynomial order = 3
+   \end{RUN_PARAMETERS}
+\end{CONTROL_INPUT}
+\end{FILE}

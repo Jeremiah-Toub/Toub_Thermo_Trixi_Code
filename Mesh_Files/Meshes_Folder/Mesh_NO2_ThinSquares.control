@@ -1,0 +1,156 @@
+\begin{MODEL}
+   \begin{OUTER_BOUNDARY}
+      \begin{END_POINTS_LINE}
+         name = line1
+         xEnd = [3.0,0.0,0.0]
+         xStart = [0.0,0.0,0.0]
+      \end{END_POINTS_LINE}
+      \begin{END_POINTS_LINE}
+         name = line2
+         xEnd = [3.0,1.25,0.0]
+         xStart = [3.0,0.0,0.0]
+      \end{END_POINTS_LINE}
+      \begin{END_POINTS_LINE}
+         name = line3
+         xEnd = [2.5,1.25,0.0]
+         xStart = [3.0,1.25,0.0]
+      \end{END_POINTS_LINE}
+      \begin{END_POINTS_LINE}
+         name = line4
+         xEnd = [2.5,1.75,0.0]
+         xStart = [2.5,1.25,0.0]
+      \end{END_POINTS_LINE}
+      \begin{END_POINTS_LINE}
+         name = line5
+         xEnd = [3.0,1.75,0.0]
+         xStart = [2.5,1.75,0.0]
+      \end{END_POINTS_LINE}
+      \begin{END_POINTS_LINE}
+         name = line6
+         xEnd = [3.0,3.25,0.0]
+         xStart = [3.0,1.75,0.0]
+      \end{END_POINTS_LINE}
+      \begin{END_POINTS_LINE}
+         name = line7
+         xEnd = [2.5,3.25,0.0]
+         xStart = [3.0,3.25,0.0]
+      \end{END_POINTS_LINE}
+      \begin{END_POINTS_LINE}
+         name = line8
+         xEnd = [2.5,3.75,0.0]
+         xStart = [2.5,3.25,0.0]
+      \end{END_POINTS_LINE}
+      \begin{END_POINTS_LINE}
+         name = line9
+         xEnd = [3.0,3.75,0.0]
+         xStart = [2.5,3.75,0.0]
+      \end{END_POINTS_LINE}
+      \begin{END_POINTS_LINE}
+         name = line10
+         xEnd = [3.0,5.0,0.0]
+         xStart = [3.0,3.75,0.0]
+      \end{END_POINTS_LINE}
+      \begin{END_POINTS_LINE}
+         name = line11
+         xEnd = [0.0,5.0,0.0]
+         xStart = [3.0,5.0,0.0]
+      \end{END_POINTS_LINE}
+      \begin{END_POINTS_LINE}
+         name = line12
+         xEnd = [0.0,3.75,0.0]
+         xStart = [0.0,5.0,0.0]
+      \end{END_POINTS_LINE}
+      \begin{END_POINTS_LINE}
+         name = line13
+         xEnd = [0.5,3.75,0.0]
+         xStart = [0.0,3.75,0.0]
+      \end{END_POINTS_LINE}
+      \begin{END_POINTS_LINE}
+         name = line14
+         xEnd = [0.5,3.25,0.0]
+         xStart = [0.5,3.75,0.0]
+      \end{END_POINTS_LINE}
+      \begin{END_POINTS_LINE}
+         name = line15
+         xEnd = [0.0,3.25,0.0]
+         xStart = [0.5,3.25,0.0]
+      \end{END_POINTS_LINE}
+      \begin{END_POINTS_LINE}
+         name = line16
+         xEnd = [0.0,1.75,0.0]
+         xStart = [0.0,3.25,0.0]
+      \end{END_POINTS_LINE}
+      \begin{END_POINTS_LINE}
+         name = line17
+         xEnd = [0.5,1.75,0.0]
+         xStart = [0.0,1.75,0.0]
+      \end{END_POINTS_LINE}
+      \begin{END_POINTS_LINE}
+         name = line18
+         xEnd = [0.5,1.25,0.0]
+         xStart = [0.5,1.75,0.0]
+      \end{END_POINTS_LINE}
+      \begin{END_POINTS_LINE}
+         name = line19
+         xEnd = [0.0,1.25,0.0]
+         xStart = [0.5,1.25,0.0]
+      \end{END_POINTS_LINE}
+      \begin{END_POINTS_LINE}
+         name = line20
+         xEnd = [0.0,0.0,0.0]
+         xStart = [0.0,1.25,0.0]
+      \end{END_POINTS_LINE}
+   \end{OUTER_BOUNDARY}
+   \begin{INNER_BOUNDARIES}
+      \begin{CHAIN}
+         name = squareLoop
+            \begin{END_POINTS_LINE}
+               name = line21
+               xEnd = [2.0,2.0,0.0]
+               xStart = [1.0,2.0,0.0]
+            \end{END_POINTS_LINE}
+            \begin{END_POINTS_LINE}
+               name = line22
+               xEnd = [2.0,3.0,0.0]
+               xStart = [2.0,2.0,0.0]
+            \end{END_POINTS_LINE}
+            \begin{END_POINTS_LINE}
+               name = line23
+               xEnd = [1.0,3.0,0.0]
+               xStart = [2.0,3.0,0.0]
+            \end{END_POINTS_LINE}
+            \begin{END_POINTS_LINE}
+               name = line24
+               xEnd = [1.0,2.0,0.0]
+               xStart = [1.0,3.0,0.0]
+            \end{END_POINTS_LINE}
+      \end{CHAIN}
+   \end{INNER_BOUNDARIES}
+\end{MODEL}
+\begin{CONTROL_INPUT}
+   \begin{REFINEMENT_REGIONS}
+      \begin{REFINEMENT_CENTER}
+         name = region
+         w = 1.0
+         x0 = [1.5,2.5,0.0]
+         type = smooth
+         h = 0.4
+      \end{REFINEMENT_CENTER}
+   \end{REFINEMENT_REGIONS}
+   \begin{SPRING_SMOOTHER}
+      smoothing type = LinearAndCrossbarSpring
+      smoothing = ON
+   \end{SPRING_SMOOTHER}
+   \begin{BACKGROUND_GRID}
+      background grid size = [0.25,0.25,0.0]
+   \end{BACKGROUND_GRID}
+   \begin{RUN_PARAMETERS}
+      mesh file name = Mesh_Files/Meshes_Folder\Mesh_NO2_ThinSquares.inp
+      plot file format = skeleton
+      plot file name = Mesh_Files/Meshes_Folder\Mesh_NO2_ThinSquares.tec
+      stats file name = Mesh_Files/Meshes_Folder\Mesh_NO2_ThinSquares.txt
+      mesh file format = ABAQUS
+      polynomial order = 3
+   \end{RUN_PARAMETERS}
+\end{CONTROL_INPUT}
+\end{FILE}
